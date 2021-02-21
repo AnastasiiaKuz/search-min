@@ -6,18 +6,18 @@ namespace Min_1
     {
         static void Main(string[] args)
         {
-            int[] a = new int[10]; //объявление массива 
+            int[] arr  = new int[10]; //объявление массива 
             Console.WriteLine("Enter 10 integers: ");
 
             for (int i = 0; i < 10; i++)
             {
-                a[i] = Convert.ToInt32(Console.ReadLine());
+                arr[i] = Convert.ToInt32(Console.ReadLine());
             }
             for (int i = 0; i < 10; i++)
             {
-                System.Console.WriteLine("The " + i + " integer is " + a[i]);
+                System.Console.WriteLine("The " + i + " integer is " + arr[i]);
             }
-            int res = search_min (a);
+            int res = search_min (arr);
             System.Console.WriteLine($"Result is: {res}");
         }
 
